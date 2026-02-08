@@ -124,6 +124,19 @@ if (input !== password) {
     <p style="margin-top:50px;font-size:1.3rem;color:#4fa3ff;">
     Sonsuza kadar sen 💙
 </p>
+    <div id="counter"
+style="margin-top:15px;font-size:1.1rem;color:#7bb6ff;"></div>
+
+<script>
+const startDate = new Date("2025-12-20"); // tarihi doğru yaz
+setInterval(() => {
+    const now = new Date();
+    const diff = now - startDate;
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    document.getElementById("counter").innerText =
+        `Birlikte geçen günlerimizin sayısı ${days} 💙`;
+}, 1000);
+</script>
 
 </div>
 
@@ -182,26 +195,6 @@ document.addEventListener("touchstart", startMusic);
 </script>
 </body>
 </html>
-<div id="counter" style="margin-top:30px;font-size:1.2rem;color:#7bb6ff;"></div>
-
-<script>
-const startDate = new Date("2025-12-20");
-setInterval(() => {
-    const now = new Date();
-    const diff = now - startDate;
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    document.getElementById("counter").innerText =
-        `🤍💖💗💓💝BİRLİKTE GEÇEN GÜNLERİMİZ ASKIMMM ${days}  💌💚💙🤍❤`;
-}, 1000);
-</script>
-</script>
-
-
-
-
-
-</script>
-
 
 
 
