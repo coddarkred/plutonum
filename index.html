@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Plütonum 💙</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: radial-gradient(circle at top, #0a1f44, #020814);
+        color: #fff;
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 30px 20px 80px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+        margin-bottom: 20px;
+        color: #7bb6ff;
+    }
+
+    .text {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 40px;
+    }
+
+    .heart {
+        color: #4fa3ff;
+        animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .gallery img {
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 0 30px rgba(79,163,255,0.4);
+        transition: transform 0.4s;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.05);
+    }
+
+    .music {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        background: rgba(10,31,68,0.8);
+        padding: 10px 15px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        box-shadow: 0 0 20px rgba(79,163,255,0.5);
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Plütonum <span class="heart">💙</span></h1>
+
+    <div class="text">
+        Plütonum,<br><br>
+
+        Sen benim en karanlık gecemde parlayan yıldızımsın.  
+        Uzak olsan bile bana en yakın olan, kalbimin en derin yerinde yaşayan tek şeysin.  
+        Dünyam bazen sessizleştiğinde, sesini duymak yetiyor bana.  
+        Gülüşün, tüm evreni susturup beni kendine çekiyor.  
+
+        <br><br>
+        Fatmanur…  
+        Sen benim mavi kalbim, sığınak olduğum gezegenimsin.  
+        Her şey geçer belki ama sana olan sevgim hiçbir yörüngeden çıkmaz.  
+
+        <br><br>
+        Sevgililer Günümüz kutlu olsun 💙
+    </div>
+
+    <div class="gallery">
+        <img src="foto1.jpg">
+        <img src="foto2.jpg">
+    </div>
+</div>
+
+<div class="music">
+    🎵 Şehinşah – Plüton
+    <audio autoplay loop controls>
+        <source src="pluton.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+</body>
+</html>
