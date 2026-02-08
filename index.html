@@ -1,3 +1,11 @@
+<script>
+const password = "young";
+const input = prompt("şifre nedir bebeğim? 💙");
+
+if (input !== password) {
+    document.body.innerHTML = "<h1 style='text-align:center;margin-top:40vh;'>❌ Yanlış şifre</h1>";
+}
+</script>
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -6,7 +14,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-    body {
+   <script>
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.innerHTML = "💙";
+    heart.style.position = "fixed";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.top = "-20px";
+    heart.style.fontSize = Math.random() * 20 + 20 + "px";
+    heart.style.opacity = Math.random();
+    heart.style.animation = "fall 5s linear";
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 5000);
+}
+
+setInterval(createHeart, 300);
+
+const style = document.createElement("style");
+style.innerHTML = `
+@keyframes fall {
+    to { transform: translateY(110vh); }
+}`;
+document.head.appendChild(style);
+</script>
+ body {
         margin: 0;
         font-family: 'Segoe UI', sans-serif;
         background: radial-gradient(circle at top, #0a1f44, #020814);
@@ -112,3 +144,16 @@
 
 </body>
 </html>
+<div id="counter" style="margin-top:30px;font-size:1.2rem;color:#7bb6ff;"></div>
+
+<script>
+const startDate = new Date("2025-12-20"); 
+setInterval(() => {
+    const now = new Date();
+    const diff = now - startDate;
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    document.getElementById("counter").innerText =
+        `Birlikte geçen ${days} gün 💙`;
+}, 1000);
+</script>
+
