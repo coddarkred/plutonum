@@ -114,7 +114,7 @@ if (input !== password) {
 
 <div class="music">
     🎵 Şehinşah – Plüton
-    <audio autoplay loop controls>
+    <audio id="music" loop>
         <source src="pluton.mp3" type="audio/mpeg">
     </audio>
 </div>
@@ -148,6 +148,23 @@ style.innerHTML = `
 }`;
 document.head.appendChild(style);
 </script>
+<script>
+const music = document.getElementById("music");
+
+function startMusic() {
+    music.volume = 0.7;
+    music.play().catch(() => {});
+    document.removeEventListener("click", startMusic);
+    document.removeEventListener("touchstart", startMusic);
+}
+
+window.addEventListener("load", () => {
+    music.play().catch(() => {});
+});
+
+document.addEventListener("click", startMusic);
+document.addEventListener("touchstart", startMusic);
+</script>
 </body>
 </html>
 <div id="counter" style="margin-top:30px;font-size:1.2rem;color:#7bb6ff;"></div>
@@ -162,4 +179,5 @@ setInterval(() => {
         `Birlikte geçen ${days} gün 💙`;
 }, 1000);
 </script>
+
 
