@@ -1,11 +1,13 @@
 <script>
 const password = "young";
-const input = prompt("şifre nedir bebeğim? 💙");
+const input = prompt("şifre ne bebeğim? 💙");
 
 if (input !== password) {
-    document.body.innerHTML = "<h1 style='text-align:center;margin-top:40vh;'>❌ Yanlış şifre</h1>";
+    document.body.style.display = "none";
+    alert("Yanlış şifre 💔");
 }
 </script>
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -155,5 +157,6 @@ setInterval(() => {
         `Birlikte geçen ${days} gün 💙`;
 }, 1000);
 </script>
+
 
 
