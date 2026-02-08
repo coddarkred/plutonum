@@ -1,3 +1,12 @@
+<script>
+const password = "young";
+const input = prompt("şifre ne bebeğim? 💙");
+
+if (input !== password) {
+    document.body.style.display = "none";
+    alert("Yanlış şifre 💔");
+}
+</script>
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -5,31 +14,8 @@
 <title>Plütonum 💙</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-   <script>
-function createHeart() {
-    const heart = document.createElement("div");
-    heart.innerHTML = "💙";
-    heart.style.position = "fixed";
-    heart.style.left = Math.random() * 100 + "vw";
-    heart.style.top = "-20px";
-    heart.style.fontSize = Math.random() * 20 + 20 + "px";
-    heart.style.opacity = Math.random();
-    heart.style.animation = "fall 5s linear";
-    document.body.appendChild(heart);
-
-    setTimeout(() => heart.remove(), 5000);
-}
-
-setInterval(createHeart, 300);
-
-const style = document.createElement("style");
-style.innerHTML = `
-@keyframes fall {
-    to { transform: translateY(110vh); }
-}`;
-document.head.appendChild(style);
-</script> body {
+<style> 
+body {
         margin: 0;
         font-family: 'Segoe UI', sans-serif;
         background: radial-gradient(circle at top, #0a1f44, #020814);
@@ -147,6 +133,7 @@ setInterval(() => {
         `Birlikte geçen ${days} gün 💙`;
 }, 1000);
 </script>
+
 
 
 
